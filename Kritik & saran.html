@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik & Saran</title>
+    <link rel="stylesheet" href="halaman_4.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Website Kritik & Saran</h1>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <a href="Home.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Tim favorit.html">Tim Favorit</a>
+        <a href="Kritik & saran.html">Kritik & Saran</a>
+        <a href="Galery.html">Gallery</a>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+        <h2>Form Kritik & Saran</h2>
+
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td><input type="text" name="nama" placeholder="Masukkan nama Anda" required></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" placeholder="Masukkan email Anda" required></td>
+                </tr>
+
+                <tr>
+                    <td>No HP</td>
+                    <td>
+                        <input type="text" value="+62" style="width:15%; display:inline;">
+                        <input type="text" placeholder="Masukkan nomor Anda" style="width:80%; display:inline;" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Pekerjaan</td>
+                    <td>
+                        <select name="pekerjaan">
+                            <option>Pelajar / Mahasiswa</option>
+                            <option>PNS / ASN</option>
+                            <option>TNI / POLRI</option>
+                            <option>Karyawan Swasta</option>
+                            <option>Wiraswasta / Pengusaha</option>
+                            <option>Guru / Dosen</option>
+                            <option>Freelancer</option>
+                            <option>Tidak Bekerja</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                        <input type="radio" name="jk" value="Perempuan"> Perempuan
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Topik</td>
+                    <td>
+                        <input type="radio" name="topik" value="Pertanyaan"> Pertanyaan<br>
+                        <input type="radio" name="topik" value="Saran"> Saran<br>
+                        <input type="radio" name="topik" value="Kritik"> Kritik<br>
+                        <input type="radio" name="topik" value="Lainnya"> Lainnya
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Pesan</td>
+                    <td>
+                        <textarea rows="6" placeholder="Tuliskan pesan Anda" required></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Kota</td>
+                    <td>
+                        <select name="kota">
+                            <option>-- Pilih Kota --</option>
+                            <option>Pamulang</option>
+                            <option>Ciledug</option>
+                            <option>Jakarta Selatan</option>
+                            <option>Jakarta Barat</option>
+                            <option>Bogor</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="SUBMIT" class="btn submit">
+                        <input type="reset" value="BATAL" class="btn reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; Copyright Rafly Al Fayadh F.R | 01SIFP014 | 251011700915 - 2026
+    </div>
+
+</body>
+</html>

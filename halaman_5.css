@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C090A;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF1801;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+header img {
+    width: 150px;
+}
+
+/* Menu */
+nav {
+    text-align: center;
+    background-color: #b30000;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #ffcccc;
+    transform: scale(1.2);
+}
+
+/* Galeri otomatis scroll */
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 40px;
+    scroll-behavior: smooth;
+    animation: autoScroll 60s linear infinite;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none; /* hide scrollbar */
+}
+
+/* Animasi scroll */
+@keyframes autoScroll {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+/* Galeri item */
+.gallery-item {
+    min-width: 300px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    transition: transform 1s, filter 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.5) rotate(15deg);
+    filter: brightness(120%);
+}
+
+/* Caption extreme */
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 24, 1, 0.9);
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover .caption {
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+.time-box {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}

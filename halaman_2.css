@@ -1,0 +1,135 @@
+/* FONT & BODY */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0C090A;
+    color: white;
+    animation: fadeIn 1.5s ease;
+}
+
+/* BANNER */
+.banner {
+    background: linear-gradient(135deg, #FF1801, #b80000);
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 42px;
+    letter-spacing: 3px;
+    animation: slideDown 1s ease;
+}
+
+/* LOGO TRANSPARAN & ANIMASI */
+.logo {
+    position: absolute;
+    right: 40px;
+    width: 160px;
+    opacity: 0.85;
+    mix-blend-mode: screen; /* menyatu dengan banner */
+    animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: black;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #FF1801;
+    border-bottom: 2px solid #FF1801;
+}
+
+/* CONTENT */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+
+.intro {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    animation: fadeUp 1.2s ease;
+}
+
+.intro img {
+    width: 250px;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.intro img:hover {
+    transform: scale(1.05);
+}
+
+p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+h3 {
+    color: #FF1801;
+    margin-top: 30px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+/* FOOTER */
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+    0%, 100% { filter: drop-shadow(0 0 5px white); }
+    50% { filter: drop-shadow(0 0 15px white); }
+}
+.time-box {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
